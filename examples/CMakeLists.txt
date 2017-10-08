@@ -132,3 +132,27 @@ add_executable(NN_MNIST nn_mnist.cpp)
 target_link_libraries(NN_MNIST ${husky})
 target_link_libraries(NN_MNIST ${HUSKY_EXTERNAL_LIB})
 husky_default_properties(NN_MNIST)
+
+# DISH
+add_executable(DISH dish.cpp)
+target_link_libraries(DISH ${husky})
+target_link_libraries(DISH ${HUSKY_EXTERNAL_LIB})
+husky_default_properties(DISH)
+
+# ASSIGN 
+add_executable(AssignID assignID.cpp)
+target_link_libraries(AssignID ${husky})
+target_link_libraries(AssignID ${HUSKY_EXTERNAL_LIB})
+husky_default_properties(AssignID)
+    
+# BENCHMARk 
+add_executable(BenchMark benchmark.cpp)
+target_link_libraries(BenchMark ${husky})
+target_link_libraries(BenchMark ${HUSKY_EXTERNAL_LIB})
+husky_default_properties(BenchMark)
+
+# BINARYDIST 
+add_executable(HAM ham.cpp)
+target_link_libraries(HAM ${husky})
+target_link_libraries(HAM ${HUSKY_EXTERNAL_LIB})
+husky_default_properties(HAM)
